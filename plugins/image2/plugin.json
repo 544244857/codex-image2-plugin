@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "image2",
+  "version": "0.1.1",
+  "description": "Generate and verify images, and optionally supply missing visual assets during software development.",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "image2",
+        "shortDescription": "Image generation and project asset support",
+        "longDescription": "Use a separately configured image relay for direct image requests or, when enabled, missing visual assets in software projects.",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Use image2 to generate an image and inspect the saved result.",
+          "Use image2 to add missing visual assets to this software project when AUTO_GENERATE_ASSETS is enabled."
+        ]
+      }
+    }
+  }
+}

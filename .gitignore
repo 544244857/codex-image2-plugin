@@ -1,0 +1,9 @@
+*.env
+!*.env.example
+imagegen-output/
+dist/
+share/
+node_modules/
+*.tgz
+*.zip
+*.tmp
