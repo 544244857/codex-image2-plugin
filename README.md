@@ -33,6 +33,24 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Install-Codex.ps1
 
 重启 Codex 或新建对话。安装脚本会注册本地 marketplace，因此解压目录需要保留。
 
+### 让 AI 帮你安装
+
+如果你正在使用支持本地 PowerShell 的 AI 编程助手，可以直接把下面这段话发给它：
+
+```text
+请帮我安装 Codex image2 插件：
+1. 从 https://github.com/544244857/codex-image2-plugin/releases/latest 下载最新的 image2-codex ZIP；
+2. 解压到一个长期保留的本地目录；
+3. 运行解压目录中的 Install-Codex.ps1；
+4. 用 codex plugin list 确认 image2 已安装并启用；
+5. 打开 plugins/image2/scripts/Configure.ps1 配置窗口。
+
+安装过程中不要读取、打印或上传我的 API key，不要修改 Codex 的聊天模型配置。
+安装完成后告诉我插件版本和验证结果。
+```
+
+这段提示适用于能执行本地命令的 Codex、IDE Agent 或其他 Windows AI 编程助手。AI 只能协助下载、解压、运行安装脚本和打开配置窗口；图片中转站地址、模型名和 API key 仍由你自己填写。
+
 ### 2. 配置
 
 运行独立的 Windows 配置窗口：
